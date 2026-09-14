@@ -1,0 +1,14 @@
+{
+  "name": "blitz-cloud-example-static-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "7.3.2"
+  },
+  "license": "MIT"
+}

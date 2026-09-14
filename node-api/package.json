@@ -1,0 +1,18 @@
+{
+  "name": "blitz-cloud-example-node-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A small Node.js JSON API for blitz.cloud, with optional PostgreSQL",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "pg": "8.23.0"
+  },
+  "license": "MIT"
+}
