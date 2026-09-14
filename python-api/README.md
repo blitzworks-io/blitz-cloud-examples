@@ -28,8 +28,8 @@ curl http://localhost:8080/env/PUBLIC_GREETING
 ## Put it on blitz.cloud
 
 ```bash
-docker build --platform linux/amd64 -t yourname/blitz-example-python-api:1.0.0 .
-docker push yourname/blitz-example-python-api:1.0.0
+docker build --platform linux/amd64 -t yourname/blitz-example-python-api:1.0.0 -t yourname/blitz-example-python-api:latest .
+docker push --all-tags yourname/blitz-example-python-api
 ```
 
 In the [dashboard](https://beta.blitz.cloud/): Host something new, "An app that is already packaged up", search for `yourname/blitz-example-python-api`, pick `1.0.0`, name it and click Put it online. To try the `/env` route, add `PUBLIC_GREETING` on the app's Environment tab and restart the app.

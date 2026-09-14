@@ -28,8 +28,8 @@ For editing, `npm install && npm run dev` gives you Astro's dev server with live
 ## Put it on blitz.cloud
 
 ```bash
-docker build --platform linux/amd64 -t yourname/blitz-example-static-site:1.0.0 .
-docker push yourname/blitz-example-static-site:1.0.0
+docker build --platform linux/amd64 -t yourname/blitz-example-static-site:1.0.0 -t yourname/blitz-example-static-site:latest .
+docker push --all-tags yourname/blitz-example-static-site
 ```
 
 Then in the [dashboard](https://beta.blitz.cloud/): Host something new, "An app that is already packaged up", search for your image, pick the version, name it, Put it online. No database, no files to keep.

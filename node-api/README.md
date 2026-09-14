@@ -40,8 +40,8 @@ Clean up with `docker rm -f notes-db && docker network rm notes-net`.
 1. Push the image to Docker Hub, either with the workflow in this repository or by hand:
 
    ```bash
-   docker build --platform linux/amd64 -t yourname/blitz-example-node-api:1.0.0 .
-   docker push yourname/blitz-example-node-api:1.0.0
+   docker build --platform linux/amd64 -t yourname/blitz-example-node-api:1.0.0 -t yourname/blitz-example-node-api:latest .
+   docker push --all-tags yourname/blitz-example-node-api
    ```
 
    Replace `yourname` with your Docker Hub user. The repository has to be public.
